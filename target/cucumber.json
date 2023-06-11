@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-11T06:33:48.384Z",
+        "line": 3,
+        "name": "Verify user is able to access PCMag Home Page",
+        "description": "",
+        "id": "to-test-pcmag-portal;verify-user-is-able-to-access-pcmag-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3194284000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched browser",
+            "match": {
+              "location": "glue.Base_Step_Definition.Verify_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64013318000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on PCMag page",
+            "match": {
+              "location": "glue.Base_Step_Definition.Navigate_To_NBA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75127000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to see PCMag home page",
+            "match": {
+              "location": "glue.Base_Step_Definition.Verify_App_Logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-11T06:34:55.748Z",
+        "line": 8,
+        "name": "Verify user is able to navigate to a subpage",
+        "description": "",
+        "id": "to-test-pcmag-portal;verify-user-is-able-to-navigate-to-a-subpage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 452872000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select \"Software \u0026 Services\" from \"Best Products \" section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Software \u0026 Services\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Best Products \"",
+                  "offset": 36
+                }
+              ],
+              "location": "glue.Base_Step_Definition.iSelectFromSection(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92793000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"Best Antivirus Apps\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Best Antivirus Apps\"",
+                  "offset": 9
+                }
+              ],
+              "location": "glue.Base_Step_Definition.iSelectOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 770309000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be navigated to the \"Best Antivirus App\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Best Antivirus App\"",
+                  "offset": 29
+                }
+              ],
+              "location": "glue.Base_Step_Definition.navigateAndCheck(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 271695000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user closes the browser",
+            "match": {
+              "location": "glue.Base_Step_Definition.After_Scenario()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Test PCMag portal",
+    "description": "",
+    "id": "to-test-pcmag-portal",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/NewsTest.feature",
+    "tags": []
+  }
+]

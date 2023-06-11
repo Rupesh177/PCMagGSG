@@ -1,0 +1,8 @@
+page_objects/MenuListSubPage.class
+framework/Utils.class
+framework/ParentScenario.class
+runners/TestRunner.class
+glue/Base_Step_Definition.class
+runners/FailedRunner.class
+framework/ParentPage.class
+page_objects/PCMag_Home_Page.class
